@@ -30,7 +30,7 @@ To push a task to the queue:
 
 Accepts:
 | Type     | Argument   | Description                                                       |
-|-------------------------------------------------------------------------------------------|
+|--------- | ---------- | ----------------------------------------------------------------- |
 | callable | $callback  | Callback to be executed. Accepts an array $args parameter.        |
 | array    | $args      | (optional) Array of arguments to pass to $callback.               |
 | int      | $timestamp | (optional) Earliest time to be executed. Defaults to immediately. |
