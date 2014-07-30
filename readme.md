@@ -34,6 +34,8 @@ callable | $callback  | Callback to be executed. Accepts an array $args paramete
 array    | $args      | (optional) Array of arguments to pass to $callback.
 int      | $timestamp | (optional) Earliest time to be executed. Defaults to immediately.
 
+Returns `false` if the event was cancelled by a plugin, `null` otherwise.
+
 ### Examples
 
 1. Creates a *log.log* file in WP root folder containing the time the task was created and the time it was run:
