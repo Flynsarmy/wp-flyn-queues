@@ -23,6 +23,8 @@ function flyn_queues_run_wp_cron()
 
 	foreach($blogs as $blog) {
 		$url = "http://" . $blog->domain . ($blog->path ? $blog->path : '/') . 'wp-cron.php?doing_wp_cron';
+
+		// Attempt to get around load balanacer timeouts by printing something
 		echo $url . "<br/>\n";
 		flush();
 
